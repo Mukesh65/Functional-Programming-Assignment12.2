@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assignment 2</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//double the values
+		var array = [10,8,12,36];
+		var double = array.map(function(array){
+			return array * 2;
+		});
+		console.log(double);//output [20,16,24,74]
+
+		//filter the values
+		var number = [20,16,24,74];
+		var filter = number.filter(function(number){
+			return number >= 20;
+		});
+		console.log(filter);//output [20,24,74]
+
+		//sum of the filter value
+		var filtersum = [20,24,74];
+		var sum = 0;
+
+		filtersum.forEach(function(filtersum){
+			sum += filtersum;
+		});
+		console.log(sum);//118
+//	</script>
+</body>
+</html>
